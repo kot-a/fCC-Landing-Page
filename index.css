@@ -379,6 +379,11 @@
             grid-column: 1/1;
             grid-row: 3/3;
         }
+        
+        #mainGallery {
+            margin: auto;
+            width: 100%;
+        }
 
         #photoOne, #photoTwo, #photoThree {
             flex-direction: column;
