@@ -1,0 +1,404 @@
+:root {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    --colorBodyBackground: #E8F1F2;
+    --colorFont: #2A324B;
+    --colorBackground: #fff ;
+    --colorDetailOne: #3E5D36;
+    --colorDetailTwo: #D0F4E3;
+    --colorLinkNew: #E23863;
+    --colorLinkOld: #A50104;
+}
+
+/* Wygląd główny */
+    body {
+        background-color: var(--colorBodyBackground);
+        color: var(--colorFont);
+    }
+
+    h2 {
+        font-family: "Bellota Text";
+        text-align: center;
+    }
+  
+    a {
+        text-decoration: none;
+        transition: 1s background-color;
+        background-color: none;
+        color: var(--colorDetailOne);
+    }
+    
+    a:visited {
+        color: var(--colorLinkOld);
+    }
+
+    /* HOVER */
+    a:hover, input[type="submit"]:hover, .bundle div:hover {
+        transition: 0.2s background-color;
+        transition: 0.2s color;
+        background-color: var(--colorLinkNew);
+        color: var(--colorBackground);
+    }
+
+    #containter {
+        width: 75%;
+        max-width: 1700px;
+        margin: auto;
+        margin-top: -10px;
+        padding-bottom: 4rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        background-color: var(--colorBackground);
+    }
+
+/* Navbar */
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        margin-top: -16px;
+    }
+    #nav-bar ol {
+        background-color: var(--colorBackground);
+        padding: 1rem 0 1rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+        text-align: center;
+    }
+    #nav-bar ol li a {
+        text-transform: uppercase;
+        background-color: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #nav-bar ol li a:visited {
+        text-decoration: none;
+        color: var(--colorFont);
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #nav-bar ol li a:hover {
+        color: var(--colorBackground);
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+/* Nagłówek */
+    #header {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        margin-left: -10px;
+        padding-left: 0;
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--colorBackground);
+    }
+
+    #header-img {
+        margin-top: auto;
+        margin-bottom: auto;
+        max-height: 50px;
+    }
+
+/* Hodowla Motyli */
+    #hmo {
+        margin-top: 2.5rem;
+        padding: 3rem 1rem 1rem 1rem;
+        background-color: var(--colorDetailTwo);
+    }
+
+    #hmo p {
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+/* Newsletter */
+    #newsletter {
+        margin-top: 2.5rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: auto auto;
+        border: 4px solid var(--colorDetailTwo);
+    }
+
+    #newsletter p {
+        grid-column: 1/1;
+        grid-row: 2/2;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    #newsletter div {
+        grid-area: 1/2/span 2/span 2;
+        background-color: var(--colorBodyBackground);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #submit {
+        margin: auto;
+        margin-top: 0.5rem;
+    }
+
+    input[type="email"] {
+        font-family: "Open Sans";
+        border: 1px solid var(--colorDetailTwo);
+        height: 2rem;
+        padding: 1rem;
+    }
+
+    input[type="submit"] {
+        font-family: "Open Sans";
+        border-radius: 0;
+        border: 1px solid var(--colorDetailTwo);
+        transition: 1s background-color;
+        background-color: var(--colorBackground);
+        height: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+/* Galeria motyli */
+    #mainGallery {
+        margin: auto;
+        width: 75%;
+    }
+
+    #photoOne, #photoTwo, #photoThree {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--colorBodyBackground);
+    }
+
+    #photoOne p, #photoTwo p, #photoThree p {
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    #photoOne .galleryImage, #photoThree .galleryImage {
+        border-right: 10px solid var(--colorBackground);
+    }
+
+    #photoTwo .galleryImage {
+        border-left: 10px solid var(--colorBackground);
+    }
+
+    .galleryImage {
+        width: 300px;
+    }
+
+    #idvideo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    #idvideo h2 {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    #idvideo div {
+        margin-top: 1rem;
+        font-size: 0.7rem;
+    }
+
+    #idvideo > iframe {
+        max-width: 560px;
+        width: 100%;
+      }
+
+/* Zestawy kolorystyczne motyli */
+    #bundleSale {
+        margin-top: 4rem;
+    }
+
+    #ourButterflies {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bundle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.1rem;
+        width: 150px;
+        padding: 1.5rem;
+        border: 4px solid var(--colorBodyBackground)
+    }
+
+    .butterfly {
+        border-radius: 50%;
+        background-color: var(--colorBodyBackground);
+        width: 150px;
+    }
+
+    .bundleName {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .bundle div {
+        text-align: center;
+        margin: auto;
+        transition: 1s background-color;
+        background-color: var(--colorBodyBackground);
+        width: 80%;
+    }
+
+    .bundle div a, .bundle div a:visited, .bundle div a:hover {
+        color: var(--colorFont);
+        background-color: transparent;
+    }
+
+/* Kontakt i social media */
+    #contact {
+        width: 75%;
+        max-width: 1700px;
+        margin: auto;
+        padding: 3rem;
+        background-color: var(--colorDetailTwo);
+        display: grid;
+        grid-template-columns: 1fr 25px 1fr 3fr;
+        grid-template-rows: auto;
+        font-size: 0.7rem;
+    }
+
+    .info, #phoneMail h3 {
+        margin: 0.1rem;
+    }
+
+    #phoneMail {
+        grid-column: 1/1;
+    }
+
+    #map {
+        grid-column: 2/2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #adress {
+        grid-column: 3/3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0.1rem;
+        margin: 0;
+    }
+
+    #socialMedia {
+        grid-column: 4/4;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #socialMedia div a {
+        margin: 1rem;
+    }
+
+    .socialIcon {
+        width: 50px;
+    }
+
+/* Footer i credits */
+    footer {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;       
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer p {
+        margin: 0.1rem;
+        margin-right: 3rem;
+    }
+
+    .fa-heart {
+        color: var(--colorLinkNew);
+    }
+
+/* Responsywność */
+    @media only screen and (max-width: 1120px) {
+
+        #header {
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            margin-left: -10px;
+            padding: 0;
+        }
+
+        #nav-bar ol {
+            flex-direction: column;
+        }
+
+        #hmo {
+            margin-top: 11rem;
+        }
+
+        #newsletter {
+            grid-template-columns: 1fr;
+        }
+
+        #newsletter div {
+            grid-column: 1/1;
+            grid-row: 3/3;
+        }
+
+        #photoOne, #photoTwo, #photoThree {
+            flex-direction: column;
+            width: auto;
+        }
+
+        #photoOne .galleryImage, #photoThree .galleryImage, #photoTwo .galleryImage {
+            border: none;
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        #contact {
+            grid-template-columns: 1fr 25px 1fr;
+            grid-row-gap: 1rem;
+        }
+        
+        #socialMedia {
+            grid-column: 1/4;
+            grid-row: 2/2;
+        }
+    }
